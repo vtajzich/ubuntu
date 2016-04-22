@@ -23,11 +23,6 @@ alias vi='vim'
 # Colorize directory listing
 alias ls="ls -ph --color=auto"
 
-Colorize grep
-if echo hello|grep --color=auto l >/dev/null 2>&1; then
-  alias grep="/usr/bin/grep $GREP_OPTIONS"
-fi
-
 # Shell
 export CLICOLOR="1"
 if [ -f $HOME/.scripts/git-prompt.sh ]; then
