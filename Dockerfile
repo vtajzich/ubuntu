@@ -5,7 +5,7 @@
 #
 
 # Pull base image.
-FROM ubuntu:16.04
+FROM ubuntu:17.10
 
 # Install.
 RUN \
@@ -14,7 +14,7 @@ RUN \
   apt-get -y upgrade && \
   apt-get install -y build-essential && \
   apt-get install -y software-properties-common && \
-  apt-get install -y byobu curl git htop man unzip vim wget && \
+  apt-get install -y byobu curl git htop man unzip vim wget iputils-ping && \
   rm -rf /var/lib/apt/lists/*
 
 # Add files.
